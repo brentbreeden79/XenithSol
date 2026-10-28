@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Xenith Solutions</title>
+  <meta name="description" content="Contact Xenith Solutions in Leesburg, VA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<main id="main">
+  <section class="page-hero">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">HOME</a> / CONTACT</div>
+      <span class="eyebrow" style="margin-top:22px">Contact us</span>
+      <h1>Let's talk <span class="grad">mission.</span></h1>
+      <p>Reach out for job inquiries, teaming opportunities, or questions about our capabilities.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <div class="info-item"><div class="icon" data-icon="phone"></div><div><small>Office</small><a href="tel:7038912731">703-891-2731</a></div></div>
+        <div class="info-item"><div class="icon" data-icon="mail"></div><div><small>Email</small><a href="mailto:info@XenithSolutions.com">info@XenithSolutions.com</a></div></div>
+        <div class="info-item"><div class="icon" data-icon="pin"></div><div><small>Headquarters</small><address>1602 Village Mkt Blvd, #260<br>Leesburg, VA 20175</address></div></div>
+        <div class="map-card"><iframe title="Map of Xenith Solutions office" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=-77.535%2C39.097%2C-77.505%2C39.113&amp;layer=mapnik&amp;marker=39.105%2C-77.520"></iframe></div>
+      </div>
+
+      <form class="form reveal" data-delay="1" novalidate>
+        <div class="form-body">
+          <div class="form-row">
+            <div class="field"><label for="name">Name <span class="req">*</span></label><input class="input" id="name" name="name" autocomplete="name" required placeholder="Jane Doe"><span class="err">Please enter your name.</span></div>
+            <div class="field"><label for="email">Email <span class="req">*</span></label><input class="input" id="email" name="email" type="email" autocomplete="email" required placeholder="jane@agency.gov"><span class="err">Please enter a valid email.</span></div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="phone">Phone</label>
+              <div class="phone-wrap">
+                <select aria-label="Country code" name="cc"><option>🇺🇸 +1</option><option>🇨🇦 +1</option><option>🇬🇧 +44</option><option>🇩🇪 +49</option><option>🇯🇵 +81</option></select>
+                <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(703) 555-0100" pattern="[0-9()+\-.\s]{7,}">
+              </div>
+              <span class="err">Please enter a valid phone number.</span>
+            </div>
+            <div class="field"><label for="subject">Subject</label><input class="input" id="subject" name="subject" placeholder="Teaming opportunity"></div>
+          </div>
+          <div class="field"><label for="message">Message <span class="req">*</span></label><textarea id="message" name="message" required placeholder="Tell us about your mission or question…"></textarea><span class="err">Please include a message.</span></div>
+          <div class="form-foot">
+            <small>Fields marked <span style="color:var(--accent)">*</span> are required.</small>
+            <button class="btn btn-primary btn-lg" type="submit">Submit <span class="arrow">→</span></button>
+          </div>
+        </div>
+        <div class="form-success" role="status" aria-live="polite">
+          <div class="icon" data-icon="check"></div>
+          <h3 style="font-size:26px">Thanks, <strong></strong> — message received.</h3>
+          <p style="color:var(--muted);margin-top:10px">Our team will be in touch shortly. (Mockup: no data was sent.)</p>
+          <button class="btn btn-ghost" type="button" data-reset style="margin-top:24px">Send another message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<script src="assets/main.js"></script>
+</body>
+</html>
